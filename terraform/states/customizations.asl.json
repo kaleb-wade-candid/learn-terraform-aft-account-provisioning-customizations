@@ -1,6 +1,11 @@
 {
-    "StartAt": "Pass",
+    "StartAt": "Wait",
     "States": {
+      "Wait": {
+        "Type": "Wait",
+        "Seconds": 5,
+        "Next": "Pass"
+      },
       "Pass": {
         "Type": "Pass",
         "End": true
